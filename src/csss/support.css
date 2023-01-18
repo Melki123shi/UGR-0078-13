@@ -1,0 +1,121 @@
+.vid-container, .audeos {
+    display: flex;
+
+}
+
+.vid-container {
+    max-width: 100%;
+    width: 100%;
+}
+
+h1 {
+    margin-left: 50%;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    color: blue;
+}
+.audeos .transcript{
+    display: none;
+}
+
+.vid-container h2 {
+    color: rgb(17, 5, 87);
+    margin-bottom: 1rem;
+}
+
+.vid-container a:hover {
+    background-color: rgb(238, 232, 232);
+    color: rgb(28, 2, 122);
+}
+
+.vid {
+    margin-right:30%;
+    margin-left:5%;
+    width:100%;
+    max-width:20%;
+}
+
+.audeos {
+    margin-top: 4%;
+    padding:2% 3%;
+}
+
+
+.payment {
+    padding: 10%;
+    background-color: rgb(59, 78, 72);
+    margin-bottom: 20%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.pay-syst {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+.pay-syst img, .pay-syst a {
+    margin-right: 20%;
+}
+
+.pay-syst img {
+    margin-top: 12%;
+}
+
+.pay-syst a {
+    color: white;
+    text-decoration: underline;
+}
+.txt a {
+    color:rgb(36, 1, 1);
+}
+
+.pay-syst a:hover {
+    color: yellow;
+}
+
+@media (max-width:660px) {
+    .vid-container, .audeos {
+        flex-direction: column;
+    }
+    .audeos {
+        margin-top: 40px;
+        padding:1%;
+    }
+    .pay-syst img {
+        width: 12%;
+        height: 12%;
+        padding-left:2% ;
+    }
+
+    .pay-syst, .pay-syst h2 {
+        margin-left: 10%;
+    }
+
+    h1 {
+        margin: 20%;
+    }
+    
+}
+
+
+@media (max-width:200px) {
+
+    .vid-container, .audeos {
+        flex-direction: column;
+        width: 100%;
+    }
+    .audeos {
+        padding: 0;
+    }
+    .pay-syst img {
+        padding-left:2%;
+    }
+
+    .pay-syst, .pay-syst h2 {
+        margin-left: 10%;
+    }
+
+}
+
